@@ -1,0 +1,29 @@
+.notfound {
+  animation-name: show;
+  animation-iteration-count: 1;
+  animation-duration: 1s;
+  padding-top: 20px;
+  > div:first-child {
+    display: flex;
+    align-items: flex-end;
+    div {
+      margin-left: 10px;
+    }
+  }
+  > div:last-child {
+    margin-top: 10px;
+    font-size: 0.8em;
+    &::before {
+      content: "- ";
+    }
+  }
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,26 @@
+.index {
+  height: 100vh;
+  > div {
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .header {
+    > div {
+      font-size: 1.2em;
+    }
+    > div:first-child {
+      font-size: 1.5em;
+    }
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .about {
+    margin-top: 100px;
+    text-align: center;
+    width: 1000px;
+    > video {
+      border: 1px solid #99b4bf;
+    }
+  }
+}

@@ -1,0 +1,100 @@
+.money {
+  display: grid;
+  grid-template-areas:
+    "options header"
+    "options content"
+    "options binddata";
+  grid-template-columns: 320px auto;
+  grid-template-rows: 100px auto 200px;
+  height: inherit;
+}
+
+.options {
+  grid-area: options;
+  height: inherit;
+  border-right: 1px solid #99b4bf;
+  h4,
+  h5 {
+    margin: 20px;
+  }
+}
+
+.header {
+  grid-area: header;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 4px 4px #99b4bf;
+  h4 {
+    margin: 20px;
+  }
+}
+// .headercontent {
+//   grid-area: headercontent;
+//   h4 {
+//     margin: 20px;
+//   }
+// }
+.content {
+  grid-area: content;
+  overflow-y: auto;
+  border-bottom: 1px solid #99b4bf;
+}
+.binddata {
+  grid-area: binddata;
+  padding: 10px;
+  overflow-y: auto;
+  h4 {
+    margin: 20px;
+  }
+}
+
+.table {
+  font-size: 0.9em;
+  //width: 100%;
+  margin-bottom: 20px;
+  border-collapse: collapse;
+}
+.table th {
+  font-weight: bold;
+  padding: 5px;
+  background: #99b4bf;
+  border: 1px solid #99b4bf;
+}
+.table td {
+  // border: 1px solid #99b4bf;
+  padding: 5px;
+}
+.table tr td:first-child,
+.table tr th:first-child {
+  border-left: none;
+  width: 70px;
+}
+.table tr td:last-child,
+.table tr th:last-child {
+  border-right: none;
+
+  > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.table tr {
+  &:hover {
+    background-color: #99b4bf;
+    cursor: pointer;
+  }
+  > td.data {
+    width: 100px;
+  }
+  > td.tdtablesalessumma {
+    width: 100px;
+  }
+}
+
+.clearlist {
+  h4 {
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+}

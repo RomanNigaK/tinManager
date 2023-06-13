@@ -1,0 +1,17 @@
+.detaliEntrance {
+  > div:not(.items) {
+    display: flex;
+    align-items: center;
+    height: 30px;
+    img {
+      margin-left: 15px;
+      margin-right: 10px;
+    }
+  }
+  > div.items {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+}

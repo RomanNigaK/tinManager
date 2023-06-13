@@ -1,0 +1,47 @@
+.option {
+  display: grid;
+  grid-template-areas: "options content";
+
+  grid-template-columns: 300px auto;
+
+  height: inherit;
+}
+
+.options {
+  grid-area: options;
+  height: inherit;
+  border-right: 1px solid #99b4bf;
+  h4 {
+    margin: 20px;
+  }
+}
+
+.content {
+  grid-area: content;
+  overflow-y: auto;
+  border-right: 1px solid #99b4bf;
+
+  h4 {
+    margin: 20px;
+  }
+}
+
+.partialsetting {
+  > div {
+    font-size: 0.8em;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10px;
+    cursor: pointer;
+
+    > div:last-child {
+      margin-right: 10px;
+    }
+  }
+  > div.currentitem {
+    background: #253c59;
+    color: white;
+  }
+}

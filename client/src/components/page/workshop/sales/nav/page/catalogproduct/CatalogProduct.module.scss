@@ -1,0 +1,27 @@
+.listproducts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow-y: auto;
+  max-height: calc(100vh - 200px);
+  > div {
+    cursor: pointer;
+    margin: 5px;
+
+    > div {
+      > svg:hover {
+        box-shadow: -3px 3px 3px rgba(0, 0, 0, 0.25);
+      }
+    }
+  }
+}
+
+.previewproduct {
+  width: 100px;
+  height: 100px;
+
+  > svg {
+    width: 100px;
+    height: 100px;
+  }
+}

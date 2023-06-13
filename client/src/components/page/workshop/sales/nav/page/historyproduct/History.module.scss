@@ -1,0 +1,15 @@
+.listitemsale {
+  padding-bottom: 20px;
+  font-size: 0.9em;
+  > div {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 10px;
+    img {
+      margin-right: 20px;
+    }
+    img:not(.avatar) {
+      width: 30px;
+    }
+  }
+}

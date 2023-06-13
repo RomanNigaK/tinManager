@@ -1,0 +1,126 @@
+.materialitem {
+  width: 300px;
+  padding-bottom: 10px;
+  background: #ffffff;
+  border: 1px solid #99b4bf;
+  border-radius: 0px 10px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  font-size: 0.9em;
+}
+.line {
+  display: flex;
+  justify-content: space-between;
+  height: 30px;
+  margin-left: 15px;
+  div {
+    display: flex;
+  }
+  div:last-child {
+    border-radius: 0px 8px 0px 10px;
+    //align-items: center;
+
+    //justify-content: center;
+    display: block;
+    color: #ffffff;
+    border-left: 1px solid #99b4bf;
+    border-bottom: 1px solid #99b4bf;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 0.9em;
+  }
+}
+.name {
+  align-items: end;
+  font-weight: bold;
+}
+.info {
+  margin-left: 15px;
+
+  > div:not(.tooltip) {
+    height: 30px;
+    white-space: nowrap;
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 20px;
+
+    padding-left: 25px;
+    line-height: 30px;
+    width: 250px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  > div.tooltip {
+    position: absolute;
+    margin-top: 20px;
+    background: #ffffff;
+    border: 1px solid #99b4bf;
+    box-shadow: 5px 5px 10px #99b4bf;
+    padding: 5px;
+    font-size: 0.8em;
+    overflow: visible;
+    width: auto;
+  }
+}
+
+.thickness {
+  background-image: url("./media/thickhess.svg");
+}
+.coverage {
+  background-image: url("./media/covarage.svg");
+  display: flex;
+  cursor: help;
+}
+.remains {
+  background-image: url("./media/remains.svg");
+}
+
+.groupinfo {
+  display: flex;
+}
+.addinfo {
+  margin-left: auto;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  div.addinfogroup {
+    > div:last-child {
+      font-weight: bold;
+      font-style: italic;
+    }
+  }
+}
+.deleteitem {
+  position: absolute;
+  margin-left: 270px;
+  margin-top: -20px;
+  cursor: pointer;
+  > img {
+    width: 25px;
+  }
+}
+
+.datadoc {
+  display: flex;
+  padding: 0px;
+  > div {
+    display: flex;
+    align-items: center;
+
+    font-size: 1em;
+    > img {
+      width: 20px;
+      margin-right: 5px;
+      margin-bottom: 5px;
+    }
+  }
+  > div:first-child {
+    margin-left: auto;
+    margin-right: 15px;
+  }
+}

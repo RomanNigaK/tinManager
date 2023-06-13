@@ -1,0 +1,89 @@
+@font-face {
+  font-family: "CormorantInfant-Regular";
+  src: url("./fonts/font_Jura/Jura/Jura-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+h4,
+h5 {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 10px;
+}
+h6 {
+  margin: 0;
+  padding: 0;
+  font-size: 0.8em;
+  font-weight: 500;
+  margin-left: 20px;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "CormorantInfant-Regular";
+  font-size: 1.3rem;
+  background-color: #ffffff;
+}
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+input {
+  border: none;
+  font-family: "CormorantInfant-Regular";
+}
+input::placeholder {
+  color: white;
+}
+
+input:focus {
+  outline: none;
+}
+textarea:focus {
+  outline: none;
+}
+
+:root {
+  --color-bg-base: #ffffff;
+  --color-bg-blue-light: #374781;
+  --color-bg-blue-dark: #2c3a6c;
+
+  --color-bg-grey-light: #f4f4f4;
+  --color-bg-grey-average: #d9d9d9;
+  --color-bg-grey-dark: #939393;
+
+  --color-font-white: #ffffff;
+  --color-font-grey: #7d7d7d;
+  --color-font-black: #000000;
+
+  --margin-left-base: 15px;
+}
+
+*,
+html * /* override x.xhtml.ru style */ {
+  scrollbar-width: thin;
+  scrollbar-color: #ffffff #2c3a6c;
+}
+
+*::-webkit-scrollbar,
+html *::-webkit-scrollbar {
+  height: 7px;
+  width: 7px;
+}
+*::-webkit-scrollbar-track,
+html *::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+*::-webkit-scrollbar-thumb,
+html *::-webkit-scrollbar-thumb {
+  background-color: #2c3a6c;
+
+  border: 1px solid #fcfcfc;
+}
+
+/* this stuff below doesn't
+   affect scrollbar styling */
+html {
+  background: lightgrey;
+  overflow: hidden;
+}

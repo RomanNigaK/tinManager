@@ -1,0 +1,226 @@
+.listsales {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "sales row"
+    "sales datasale";
+  grid-template-columns: 50% auto;
+  grid-template-rows: 100px 100px auto;
+  height: inherit;
+}
+
+.header {
+  grid-area: header;
+  border-bottom: 1px solid #99b4bf;
+  box-shadow: 0px 4px 4px #99b4bf;
+}
+.datasale {
+  grid-area: datasale;
+
+  box-shadow: 0px 4px 4px #99b4bf;
+  h4 {
+    margin: 20px;
+  }
+  padding: 10px;
+  overflow-y: auto;
+}
+
+.sales {
+  border-right: 1px solid #99b4bf;
+  grid-area: sales;
+  overflow-y: auto;
+  padding: 5px;
+  h4 {
+    margin-top: 20px;
+  }
+}
+.row {
+  border-bottom: 1px solid #99b4bf;
+  padding: 10px;
+  padding-left: 30px;
+  > div.optionrow {
+    display: flex;
+    > div.formpay {
+      width: 200px;
+    }
+  }
+}
+
+.table {
+  font-size: 0.9em;
+  width: 100%;
+  margin-bottom: 20px;
+  border-collapse: collapse;
+}
+.table th {
+  font-weight: bold;
+  padding: 5px;
+  background: #99b4bf;
+  border: 1px solid #99b4bf;
+}
+.table td {
+  border: 1px solid #99b4bf;
+  padding: 5px;
+}
+.table tr td:first-child,
+.table tr th:first-child {
+  border-left: none;
+  width: 100px;
+}
+.table tr td:last-child,
+.table tr th:last-child {
+  border-right: none;
+  width: 50px;
+  > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.table tr {
+  &:hover {
+    background-color: #99b4bf;
+    cursor: pointer;
+  }
+  > td.data {
+    width: 100px;
+  }
+  > td.tdtablesalessumma {
+    width: 120px;
+    > div {
+      display: flex;
+      > div {
+        display: flex;
+        align-items: center;
+      }
+      > div:last-child {
+        margin-left: auto;
+        position: relative;
+        &:hover::before {
+          content: "Ожидание оплаты";
+          position: absolute;
+          background-color: white;
+          margin-left: -150px;
+          width: 200px;
+          margin-top: -70px;
+          border: 1px solid #99b4bf;
+          box-shadow: 5px 5px 10px 3px #99b4bf;
+          border-radius: 10px;
+          padding: 10px;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+.viewproducthistorysale {
+  margin-left: 40px;
+  margin-right: 40px;
+  //width: 400px;
+  border: 1px solid #99b4bf;
+  border-radius: 0px 10px 0px 10px;
+  font-size: 0.9em;
+  > div.nameAndcolor {
+    display: flex;
+    height: 40px;
+    > div:first-child {
+      display: flex;
+      align-items: flex-end;
+      padding-left: 10px;
+    }
+    > div:last-child {
+      margin-left: auto;
+      height: inherit;
+      > div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0px 10px 0px 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-bottom: 1px solid #99b4bf;
+        border-left: 1px solid #99b4bf;
+        height: inherit;
+      }
+    }
+  }
+  > div.quantityAndh {
+    display: flex;
+    padding-left: 10px;
+    margin-top: 10px;
+    > div {
+      margin-right: 10px;
+    }
+  }
+  > div.svg {
+    //height: 30px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+
+    > div:first-child {
+      width: 300px;
+      height: 300px;
+      position: relative;
+      margin-left: 50px;
+      > div {
+        > div:first-child {
+          > div {
+            position: absolute;
+          }
+        }
+      }
+    }
+    > div:last-child {
+      margin-right: 50px;
+      max-width: 300px;
+    }
+    > div.size {
+      height: 250px;
+      width: 100px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-end;
+      > div:first-child {
+        font-size: 1.5em;
+        font-weight: bold;
+      }
+      > div:last-child {
+        padding-top: 2px;
+        padding-left: 2px;
+      }
+    }
+    // > div:last-child {
+    //   margin-left: auto;
+    //   border-left: 1px solid #99b4bf;
+    //   padding-left: 10px;
+    // }
+  }
+  > div.ticknessAndcoverage {
+    display: flex;
+    padding-left: 10px;
+    > div {
+      height: 40px;
+      display: flex;
+      align-items: center;
+      background-position: left center;
+      background-repeat: no-repeat;
+      padding-left: 25px;
+    }
+    > div:first-child {
+      margin-right: 20px;
+      background-image: url("../../../../commons/materialitem/media/thickhess.svg");
+    }
+    > div:last-child {
+      background-image: url("../../../../commons/materialitem/media/covarage.svg");
+    }
+  }
+}
+
+.status {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  height: 40px;
+}

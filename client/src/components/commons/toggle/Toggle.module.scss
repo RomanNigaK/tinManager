@@ -1,0 +1,75 @@
+.togglediv {
+  display: flex;
+  margin-right: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  align-items: center;
+  font-size: 0.9em;
+  > div:first-child {
+    margin-right: 10px;
+  }
+  > div:last-child {
+    // margin-left: auto;
+  }
+}
+.wrapper {
+  cursor: pointer;
+  width: 63px;
+  height: 30px;
+  background: #99b4bf;
+  border-radius: 25px;
+  border: 1px solid #99b4bf;
+  display: flex;
+  align-items: center;
+  > div {
+    animation-name: toggleclickoff;
+    animation-duration: 0.3s;
+    animation-iteration-count: 1;
+    width: 28px;
+    height: 28px;
+    background: #d9d9d9;
+    border-radius: 25px;
+  }
+  > div.activtoggle {
+    animation-name: toggleclick;
+    animation-duration: 0.3s;
+    animation-iteration-count: 1;
+    background: #2c3a6c;
+    margin-left: auto;
+  }
+}
+
+.togglediv2 {
+  display: flex;
+  margin-right: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  align-items: center;
+  font-size: 0.9em;
+  justify-content: flex-end;
+
+  > div:first-child {
+    text-align: right;
+    margin-right: 10px;
+  }
+  > div:last-child {
+    margin-left: auto;
+  }
+}
+
+@keyframes toggleclick {
+  from {
+    margin-left: 0px;
+  }
+  to {
+    margin-left: 35px;
+  }
+}
+@keyframes toggleclickoff {
+  from {
+    margin-left: 35px;
+  }
+  to {
+    margin-left: 0px;
+  }
+}

@@ -1,0 +1,30 @@
+.inputquantity {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #253c59;
+  padding-bottom: 20px;
+  margin-left: 20px;
+  // width: 450px;
+  > div:first-child {
+    display: flex;
+    justify-content: right;
+    margin-right: 10px;
+    padding-top: 10px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    cursor: pointer;
+    justify-content: space-between;
+    align-items: top;
+    > div.name {
+      color: #fff;
+      margin-top: 30px;
+    }
+  }
+
+  // > div.field {
+  //   width: 200px;
+  // }
+}
+.field {
+  width: 300px;
+}

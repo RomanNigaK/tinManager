@@ -1,0 +1,47 @@
+.appmsg {
+  position: absolute;
+  width: 300px;
+
+  right: 0px;
+  top: 0px;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+
+.msgbox {
+  animation-name: show;
+  animation-duration: 0.7s;
+  animation-iteration-count: 1;
+  width: inherit;
+  margin-bottom: 10px;
+
+  background: #ffffff;
+  border: 1px solid #99b4bf;
+  box-shadow: 5px 5px 10px 3px #99b4bf;
+  border-radius: 10px;
+  padding-bottom: 20px;
+  > div:first-child {
+    text-align: right;
+    font-size: 2em;
+    margin-right: 10px;
+    color: #2c3a6c;
+    cursor: pointer;
+    margin-top: -5px;
+  }
+  > div:last-child {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: -10px;
+  }
+}
+
+@keyframes show {
+  from {
+    margin-top: 600px;
+  }
+  to {
+    margin-top: 10px;
+  }
+}

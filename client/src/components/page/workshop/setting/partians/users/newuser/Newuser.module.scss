@@ -1,0 +1,13 @@
+@import "../../../Setting.module.scss";
+
+.newuser {
+  .form {
+    > div {
+      display: flex;
+      > div {
+        width: 250px;
+        margin: 5px;
+      }
+    }
+  }
+}

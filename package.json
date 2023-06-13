@@ -1,0 +1,38 @@
+{
+  "name": "tinmanager",
+  "version": "1.0.0",
+  "description": "\"Программа управления цехом online\" ",
+  "main": "index.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=production node app.js",
+    "server": "nodemon app.js",
+    "buildclient": "npm run build --prefix client",
+    "startclient": "npm run start --prefix client",
+    "dev": "cross-env NODE_ENV=development concurrently \" npm run server\" \" npm run startclient\""
+  },
+  "keywords": [
+    "tin",
+    "online",
+    "management"
+  ],
+  "author": "Roman Kulish <romankulish@yandex.ru>",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "bcryptjs": "^2.4.3",
+    "config": "^3.3.9",
+    "express": "^4.18.2",
+    "express-validator": "^6.15.0",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^6.9.3",
+    "multer": "^1.4.5-lts.1",
+    "sqlite3": "^5.1.6"
+  },
+  "devDependencies": {
+    "concurrently": "^7.6.0",
+    "cross-env": "^7.0.3",
+    "nodemon": "^2.0.20",
+    "sass": "^1.61.0",
+    "sass-loader": "^13.2.2"
+  }
+}

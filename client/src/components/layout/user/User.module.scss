@@ -1,0 +1,29 @@
+.user {
+  display: flex;
+  color: #fff;
+  justify-content: left;
+  background-color: inherit;
+  padding: 15px;
+}
+
+.avatar {
+  width: 60px;
+
+  img {
+    width: inherit;
+    border: 2px solid #fff;
+    border-radius: 50px;
+  }
+  margin-right: 20px;
+}
+.email {
+  font-size: 1.1em;
+}
+.option {
+  width: inherit;
+  margin-top: 15px;
+  img {
+    margin-right: 10px;
+    cursor: pointer;
+  }
+}

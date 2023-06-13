@@ -1,0 +1,28 @@
+.listinwork {
+  text-align: left;
+
+  //padding-left: 20px;
+  > div {
+    padding-left: 20px;
+    height: 30px;
+    font-size: 0.8em;
+
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    > div:first-child {
+      display: flex;
+      > div:first-child {
+        width: 30px;
+      }
+    }
+    > div:last-child {
+      margin-left: auto;
+      margin-right: 10px;
+    }
+  }
+}
+.currenttin {
+  background-color: #253c59;
+  color: #fff;
+}

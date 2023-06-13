@@ -1,0 +1,38 @@
+.cotainer {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  position: relative;
+  width: inherit;
+  height: inherit;
+  > div {
+    position: relative;
+    width: inherit;
+    height: inherit;
+
+    > div {
+      background-color: #fff;
+      width: inherit;
+      height: inherit;
+    }
+    .basicpage {
+      margin-left: 0;
+      transition: 0.2s;
+      position: absolute;
+    }
+    .additionalpage {
+      > div {
+        > div.back {
+          margin-left: 280px;
+          margin-top: 10px;
+          cursor: pointer;
+        }
+      }
+    }
+
+    > div.hide {
+      margin-left: -320px;
+      transition: 0.2s;
+    }
+  }
+}

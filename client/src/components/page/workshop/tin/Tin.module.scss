@@ -1,0 +1,64 @@
+.tin {
+  display: grid;
+  grid-template-areas:
+    "options header"
+    "options content";
+  grid-template-columns: 300px auto;
+  grid-template-rows: 100px auto;
+  height: inherit;
+}
+.option {
+  grid-area: options;
+  border-right: 1px solid #99b4bf;
+  overflow-y: auto;
+  h4 {
+    margin-top: 20px;
+    margin-right: 10px;
+  }
+  h5 {
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+}
+
+.header {
+  grid-area: header;
+  border-bottom: 1px solid #99b4bf;
+  display: flex;
+
+  > div.actions {
+    display: flex;
+    align-items: center;
+    height: inherit;
+    width: 100%;
+    > div {
+      margin-right: 10px;
+    }
+    > div:first-child {
+      margin-left: 10px;
+    }
+    > div:last-child {
+      font-size: 0.9em;
+      background: #253c59;
+      border-radius: 25px;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 60px;
+      padding: 10px;
+      width: 200px;
+      margin-left: auto;
+    }
+  }
+}
+.content {
+  grid-area: content;
+  padding-top: 20px;
+  overflow-y: auto;
+  background-color: #fff;
+}
+
+.printbtn {
+  cursor: pointer;
+}

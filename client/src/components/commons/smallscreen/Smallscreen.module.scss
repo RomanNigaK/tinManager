@@ -1,0 +1,46 @@
+.smallscreen {
+  width: 100vw;
+  min-height: 100vh;
+  overflow-y: auto;
+  > div.logo {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 0.9em;
+    > div {
+      text-align: center;
+      > div.info {
+        font-size: 0.9em;
+        margin-top: 20px;
+        > div.title {
+          margin-left: 10px;
+          margin-right: 10px;
+          text-align: left;
+          margin-bottom: 10px;
+          &::before {
+            content: " - ";
+          }
+        }
+      }
+      > div.video {
+        font-size: 0.9em;
+        margin-top: 50px;
+        margin-bottom: 40px;
+        h4 {
+          margin-bottom: 30px;
+        }
+      }
+      > div.contacts {
+        margin-top: 20px;
+        > div:first-child {
+          font-size: 0.9em;
+          padding-left: 20px;
+          padding-right: 20px;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}

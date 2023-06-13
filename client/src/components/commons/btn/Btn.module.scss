@@ -1,0 +1,30 @@
+.btn {
+  background-color: #253c59;
+  height: 45px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 1px solid #253c59;
+  border-radius: 25px;
+  min-width: 100px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 0.8em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  > label {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    height: inherit;
+    width: inherit;
+    width: 100%;
+    min-height: inherit;
+    justify-content: center;
+  }
+
+  &:hover {
+    box-shadow: 0px 5px 10px 0px #99b4bf;
+  }
+}

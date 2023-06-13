@@ -1,0 +1,20 @@
+.reg {
+  > div {
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .header {
+    > div {
+      font-size: 1.2em;
+    }
+    > div:first-child {
+      font-size: 1.5em;
+    }
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .form {
+    width: 350px;
+  }
+}

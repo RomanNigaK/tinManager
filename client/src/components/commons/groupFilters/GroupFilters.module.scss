@@ -1,0 +1,14 @@
+.groupfilters {
+  height: 100px;
+  //border-bottom: 2px solid var(--color-bg-grey-average);
+
+  background-image: url("./media/filter.svg");
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  padding-left: 50px;
+  display: flex;
+  align-items: center;
+  > div {
+    margin-right: 10px;
+  }
+}

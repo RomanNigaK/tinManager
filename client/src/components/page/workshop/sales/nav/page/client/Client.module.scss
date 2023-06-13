@@ -1,0 +1,15 @@
+.newclient {
+  margin-top: 20px;
+}
+.client {
+  > div {
+    margin-bottom: 10px;
+  }
+  > div.listclientdiv {
+    text-align: right;
+    padding-right: 10px;
+    font-size: 0.9em;
+    overflow-y: auto;
+    max-height: 500px;
+  }
+}

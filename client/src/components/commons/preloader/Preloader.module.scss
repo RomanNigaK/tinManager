@@ -1,0 +1,17 @@
+.preloader {
+  height: inherit;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  img {
+    height: 80%;
+  }
+}
+.extendspreloader {
+  text-align: center;
+}
+.gif {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,23 @@
+.listexpenses {
+  margin-left: 20px;
+  > div {
+    cursor: pointer;
+  }
+
+  .list {
+    font-size: 0.9em;
+    > div {
+      height: 25px;
+      line-height: 25px;
+      padding-left: 10px;
+      &:hover {
+        background: #99b4bf;
+      }
+    }
+  }
+  > div.add {
+    margin-top: 15px;
+
+    margin-left: 10px;
+  }
+}

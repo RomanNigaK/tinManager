@@ -1,0 +1,152 @@
+$margin: 10px;
+.error {
+  color: rgb(255, 155, 155);
+  font-size: 0.8em;
+  margin-top: 5px;
+  margin-left: $margin;
+  text-align: left;
+}
+.wrapper {
+  background-color: var(--color-bg-grey-a);
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  border: 1px solid transparent;
+  height: 40px;
+  > input {
+    font-size: 0.9em;
+    margin-left: $margin;
+    margin-right: $margin;
+    width: 100%;
+    background: transparent;
+  }
+  .btn {
+    background-color: #253c59;
+    border-radius: inherit;
+    height: inherit;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding-left: $margin;
+    padding-right: $margin;
+    font-size: 0.8em;
+    cursor: pointer;
+    > label {
+      cursor: pointer;
+    }
+  }
+
+  .wrapperTogle {
+    width: 100%;
+    display: flex;
+    height: inherit;
+    border-radius: inherit;
+    > div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50%;
+      height: inherit;
+      border-radius: inherit;
+      cursor: pointer;
+    }
+    .active {
+      background-color: #253c59;
+      color: #fff;
+    }
+  }
+  > img {
+    margin-right: 10px;
+  }
+}
+.search {
+  z-index: 555;
+  position: absolute;
+  width: 250px;
+
+  font-size: 0.8em;
+  padding: 15px;
+  background: #ffffff;
+  border: 1px solid #99b4bf;
+  box-shadow: 5px 5px 10px 3px #99b4bf;
+
+  color: #99b4bf;
+  cursor: pointer;
+
+  > div:first-child {
+    display: flex;
+    justify-content: right;
+    font-size: 1.5em;
+    > div:first-child {
+      position: absolute;
+      margin-top: -15px;
+    }
+  }
+  > div:last-child {
+    margin-top: 10px;
+    overflow-y: auto;
+    max-height: 200px;
+    > div {
+      &:hover {
+        color: black;
+      }
+    }
+  }
+}
+
+.resultSearch {
+  border-width: 0px 1px 1px 1px;
+  border-style: solid;
+  border-color: #99b4bf;
+  border-radius: 0px 0px 0px 25px;
+
+  margin-top: -25px;
+  padding-top: 25px;
+  margin-right: -1px;
+  font-size: 0.8em;
+
+  > div.searchItems {
+    overflow-y: auto;
+    max-height: 250px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    > div {
+      text-align: right;
+      padding-right: 20px;
+    }
+  }
+
+  > div.clearList {
+    font-size: 0.8em;
+    height: 100px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.notfound {
+  font-size: 0.8em;
+  height: 100px;
+  display: flex;
+
+  align-items: center;
+  text-align: center;
+}
+.searchItems {
+  color: #253c59;
+  > div:first-child {
+    margin-top: 10px;
+  }
+  > div {
+    &:hover {
+      color: black;
+      cursor: pointer;
+      background-color: #253c59;
+      color: #fff;
+      margin-left: 30px;
+      border-radius: 10px 0px 0px 10px;
+    }
+  }
+}

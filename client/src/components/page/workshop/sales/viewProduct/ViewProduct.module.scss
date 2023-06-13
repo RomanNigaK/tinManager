@@ -1,0 +1,24 @@
+.fff {
+  display: flex;
+
+  input {
+    width: 40px;
+    text-align: left;
+    font-size: 0.9em;
+    background-color: transparent;
+    padding: 0;
+    &:focus {
+      border-bottom: 1px solid #99b4bf;
+    }
+  }
+  sup {
+    margin-left: 0px;
+
+    font-size: 0.7em;
+  }
+}
+.degree {
+  input {
+    text-align: right;
+  }
+}

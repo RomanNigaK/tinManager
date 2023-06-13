@@ -1,0 +1,21 @@
+.search {
+  height: 50px;
+  border-radius: 25px 0px 0px 25px;
+  background-color: #99b4bf;
+  > div {
+    display: flex;
+    height: inherit;
+    align-items: center;
+    padding-left: 10px;
+    input {
+      width: 100%;
+      background-color: transparent;
+      font-size: 0.9em;
+      margin-right: 10px;
+    }
+
+    img {
+      margin-right: 10px;
+    }
+  }
+}

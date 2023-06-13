@@ -1,0 +1,62 @@
+.price {
+  > form {
+    > div.blockoptions {
+      padding-left: 30px;
+      border-left: 5px solid #253c59;
+      border-top: 1px solid #253c59;
+      > div.title {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 0.9em;
+      }
+      > div.wrappertoggle {
+        width: 350px;
+        font-size: 0.8em;
+      }
+      > div.wrapperinput {
+        width: 350px;
+        font-size: 0.9em;
+      }
+      > div.about {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 0.7em;
+      }
+      > div.saveedit {
+        margin-top: 30px;
+        margin-right: 300px;
+      }
+    }
+  }
+}
+
+.table {
+  width: 100%;
+  margin-bottom: 20px;
+  border-collapse: collapse;
+}
+.table th {
+  font-weight: bold;
+  padding: 5px;
+  background: #efefef;
+  border: 1px solid #dddddd;
+}
+.table td {
+  border: 1px solid #dddddd;
+  padding: 5px;
+}
+.table tr td:first-child,
+.table tr th:first-child {
+  border-left: none;
+}
+.table tr td:last-child,
+.table tr th:last-child {
+  border-right: none;
+}
+
+.entrance {
+  margin-bottom: 20px;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  border-top: 1px solid #99b4bf;
+}

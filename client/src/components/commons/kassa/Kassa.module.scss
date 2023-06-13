@@ -1,0 +1,28 @@
+.kassa {
+  > div.money {
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+    border-radius: 10px 0px 0px 10px;
+    border-top: 1px solid #99b4bf;
+    border-left: 1px solid #99b4bf;
+    border-bottom: 1px solid #99b4bf;
+    height: 60px;
+    > div {
+      display: flex;
+      align-items: center;
+      img {
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+      }
+      > div {
+        display: flex;
+        align-items: center;
+        img {
+          width: 25px;
+        }
+      }
+    }
+  }
+}
