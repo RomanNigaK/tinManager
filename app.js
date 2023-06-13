@@ -20,7 +20,7 @@ const http = require("http");
 
 const app = express();
 
-const httpsServer = https.createServer(httOptions, app);
+//const httpsServer = https.createServer(httOptions, app);
 const httpServer = http.createServer(app);
 
 app.use(express.json({ extended: true }));
