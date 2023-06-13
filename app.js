@@ -55,7 +55,7 @@ if (process.env.NODE_ENV === "production") {
 async function start() {
   if (process.env.NODE_ENV === "production") {
     //httpsServer.listen(443, () => console.log(`Server start ${443}`));
-    httpServer.listen(PORT, () => console.log(`Server start ${80}`));
+    httpServer.listen(5555, () => console.log(`Server start ${80}`));
   } else {
     http
       .createServer(app)
