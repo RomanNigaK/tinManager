@@ -7,20 +7,20 @@ const auth = require("./middleware/auth");
 const sqlite3 = require("sqlite3").verbose();
 const db = new sqlite3.Database(config.dbName);
 
-// const https = require("https");
+const https = require("https");
 const http = require("http");
-// const httOptions = {
-//   key: fs.readFileSync("./ssl/596017.key"),
-//   cert: fs.readFileSync("./ssl/www_tinmanager_ru.crt"),
-//   ca: [
-//     fs.readFileSync("./ssl/AlphaSSL CA - SHA256 - G4.crt"),
-//     fs.readFileSync("./ssl/GlobalSign Root CA.crt"),
-//   ],
-// };
+const httOptions = {
+  key: fs.readFileSync("./ssl/596017.key"),
+  cert: fs.readFileSync("./ssl/www_tinmanager_ru.crt"),
+  ca: [
+    fs.readFileSync("./ssl/AlphaSSL CA - SHA256 - G4.crt"),
+    fs.readFileSync("./ssl/GlobalSign Root CA.crt"),
+  ],
+};
 
 const app = express();
 
-//const httpsServer = https.createServer(httOptions, app);
+const httpsServer = https.createServer(httOptions, app);
 const httpServer = http.createServer(app);
 
 app.use(express.json({ extended: true }));
@@ -54,7 +54,7 @@ if (process.env.NODE_ENV === "production") {
 
 async function start() {
   if (process.env.NODE_ENV === "production") {
-    //httpsServer.listen(443, () => console.log(`Server start ${443}`));
+    httpsServer.listen(443, () => console.log(`Server start ${443}`));
     httpServer.listen(5555, () => console.log(`Server start ${80}`));
   } else {
     http
