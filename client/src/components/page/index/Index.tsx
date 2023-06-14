@@ -1,7 +1,7 @@
 import React from "react";
 import scss from "./Index.module.scss";
 import Field from "../../commons/field/Field";
-import about from "./media/about.mp4";
+import about from "@public/about2.mp4";
 import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useForm, SubmitHandler } from "react-hook-form";
