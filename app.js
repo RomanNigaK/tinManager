@@ -20,6 +20,18 @@ const httOptions = {
 
 const app = express();
 
+var hederServer = function (req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Methods", " GET, POST, PUT, DELETE");
+  res.header("Access-Control-Allow-Credentials", " true");
+  res.header(
+    "Access-Control-Allow-Headers",
+    " Authorization, Origin, X-Requested-With, Accept, X-PINGOTHER, Content-Type"
+  );
+  next();
+};
+app.use(hederServer);
+
 const httpsServer = https.createServer(httOptions, app);
 const httpServer = http.createServer(app);
 
