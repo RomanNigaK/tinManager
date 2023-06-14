@@ -1,5 +1,6 @@
 .index {
   height: 100vh;
+  overflow-y: auto;
   > div {
     width: 500px;
     margin: 0 auto;

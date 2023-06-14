@@ -158,6 +158,7 @@ export default function Reg() {
                 register={register}
                 placeholder="Пароль"
                 size="middle"
+                type="password"
                 error={errors.pass?.message}
               />
               <Field
@@ -165,6 +166,7 @@ export default function Reg() {
                 theme="standart"
                 register={register}
                 placeholder="Повторите пароль"
+                type="password"
                 size="middle"
                 titleBtn="Регистрация"
                 idForSubmit="reg"

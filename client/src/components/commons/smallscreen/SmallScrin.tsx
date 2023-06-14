@@ -1,7 +1,7 @@
 import React from "react";
 import scss from "./Smallscreen.module.scss";
 import logo from "@public/logo.png";
-import about from "@public/about.mp4";
+import about from "@public/about2.mp4";
 export default function SmallScrin() {
   return (
     <div className={scss.smallscreen}>
