@@ -25,8 +25,6 @@ export default function Tin() {
   const [isShowFinish, setisShowFinish] = useState(true);
   const [isPrint, setisPrint] = useState(false);
   const tin = useHttp();
-  const ready = useHttp();
-  const finish = useHttp();
 
   const handleInWork = async () => {
     try {
@@ -94,6 +92,7 @@ export default function Tin() {
                     title="В работу"
                     click={handleInWork}
                     disabled={isShowTin}
+                    loading={tin.loading}
                   />
                 </div>
                 <div>
@@ -101,6 +100,7 @@ export default function Tin() {
                     title="Готов"
                     disabled={isShowReady}
                     click={handleReady}
+                    loading={tin.loading}
                   />
                 </div>
                 <div>
@@ -108,6 +108,7 @@ export default function Tin() {
                     title="Выдан"
                     disabled={isShowFinish}
                     click={handleFinish}
+                    loading={tin.loading}
                   />
                 </div>
                 <div onClick={() => setisPrint(true)} className={scss.printbtn}>
