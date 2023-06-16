@@ -1,10 +1,10 @@
 .fff {
   display: flex;
-
+  margin-left: -10px;
   input {
-    width: 40px;
+    width: 50px;
     text-align: left;
-    font-size: 0.9em;
+    font-size: 1em;
     background-color: transparent;
     padding: 0;
     &:focus {

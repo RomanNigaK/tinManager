@@ -50,7 +50,7 @@ export default function CreateProductPipe({
     quantity: yup
       .number()
       .integer("число должно быть целым")
-      .min(2, "минимальное количество 2")
+      .min(1, "минимальное количество 1")
       .typeError("не корректное число")
       .required("обязательно для заполнения"),
     square: yup

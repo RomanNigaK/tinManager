@@ -8,7 +8,7 @@ type TypeSizes = {
 type TypeProductList = {
   id: number;
   type: 1 | 2;
-  // 1 класические изделия
+  // 1 классические изделия
   // 2 дымники
 
   name: string;
@@ -779,7 +779,53 @@ class ProductList {
       name: "Торцевая планка",
       alias: "#торцевая планка #ветровая планка ",
       arrow: 1,
-      sizes: [],
+      sizes: [
+        {
+          position: {
+            marginLeft: 60,
+            marginTop: 259,
+          },
+          value: 10,
+          id: 1,
+          type: "bend",
+        },
+        {
+          position: {
+            marginLeft: 22,
+            marginTop: 207,
+          },
+          value: 20,
+          id: 2,
+          type: "length",
+        },
+        {
+          position: {
+            marginLeft: 30,
+            marginTop: 135,
+          },
+          value: 100,
+          id: 3,
+          type: "length",
+        },
+        {
+          position: {
+            marginLeft: 159,
+            marginTop: 100,
+          },
+          value: 100,
+          id: 4,
+          type: "length",
+        },
+        {
+          position: {
+            marginLeft: 264,
+            marginTop: 52,
+          },
+          value: 20,
+          id: 5,
+          type: "length",
+        },
+      ],
       svgPaths: [
         "M56.2343 245.266C54.5983 259.515 52.607 265.557 37.5062 266.391C36.608 266.44 36.1363 265.364 36.7724 264.728L69.7073 231.793C69.8948 231.606 70.0002 231.351 70.0002 231.086L70.0002 64.7768C70.0002 63.7897 71.2786 63.3995 71.8298 64.2185L87.2029 87.0586C87.3887 87.3346 87.6997 87.5002 88.0325 87.5002L284.121 87.5001C285.262 87.5001 285.513 85.8971 284.427 85.548L262.5 78.5",
       ],
@@ -790,7 +836,62 @@ class ProductList {
       name: "Торцевая планка",
       alias: "#торцевая планка #ветровая планка ",
       arrow: 1,
-      sizes: [],
+      sizes: [
+        {
+          position: {
+            marginLeft: 49,
+            marginTop: 245,
+          },
+          value: 10,
+          id: 1,
+          type: "bend",
+        },
+        {
+          position: {
+            marginLeft: 250,
+            marginTop: 96,
+          },
+          value: 10,
+          id: 2,
+          type: "bend",
+        },
+        {
+          position: {
+            marginLeft: 15,
+            marginTop: 208,
+          },
+          value: 10,
+          id: 3,
+          type: "length",
+        },
+        {
+          position: {
+            marginLeft: 20,
+            marginTop: 120,
+          },
+          value: 100,
+          id: 4,
+          type: "length",
+        },
+        {
+          position: {
+            marginLeft: 150,
+            marginTop: 40,
+          },
+          value: 100,
+          id: 5,
+          type: "length",
+        },
+        {
+          position: {
+            marginLeft: 264,
+            marginTop: 52,
+          },
+          value: 20,
+          id: 6,
+          type: "length",
+        },
+      ],
       svgPaths: [
         "M53.2341 225.587C51.5981 239.836 49.6068 245.878 34.506 246.712C33.6078 246.762 33.1361 245.685 33.7722 245.049L66.7071 212.114C66.8946 211.927 67 211.673 67 211.407L67 67C67 66.4477 67.4477 66 68 66L250.637 66.0001C250.871 66.0001 251.099 66.0826 251.278 66.233L276.587 87.3999C277.279 87.9786 276.903 89.096 276.002 89.1249C261.882 89.5775 258.707 84.9343 258.5 72.2728",
       ],
@@ -801,7 +902,53 @@ class ProductList {
       name: "Торцевая планка",
       alias: "#торцевая планка #ветровая планка ",
       arrow: 1,
-      sizes: [],
+      sizes: [
+        {
+          position: {
+            marginLeft: 86,
+            marginTop: 232,
+          },
+          value: 10,
+          id: 1,
+          type: "bend",
+        },
+        {
+          position: {
+            marginLeft: 249,
+            marginTop: 96,
+          },
+          value: 10,
+          id: 2,
+          type: "bend",
+        },
+        {
+          position: {
+            marginLeft: 78,
+            marginTop: 135,
+          },
+          value: 100,
+          id: 3,
+          type: "length",
+        },
+        {
+          position: {
+            marginLeft: 139,
+            marginTop: 40,
+          },
+          value: 100,
+          id: 4,
+          type: "length",
+        },
+        {
+          position: {
+            marginLeft: 264,
+            marginTop: 52,
+          },
+          value: 100,
+          id: 5,
+          type: "length",
+        },
+      ],
       svgPaths: [
         "M258.5 72.2727C258.707 84.9341 261.882 89.5773 276.002 89.1247C276.903 89.0958 277.279 87.9784 276.587 87.3998L251.279 66.2329C251.099 66.0824 250.872 66 250.637 66L68 65.9999C67.4477 65.9999 67 66.4476 67 66.9999L67 211.822L67.0002 253.031C67.0002 253.988 68.2062 254.378 68.7517 253.591C78.6575 239.294 75.2482 231.036 67 217",
       ],
@@ -812,7 +959,44 @@ class ProductList {
       name: "Карнизная планка",
       alias: "#карнизная планка #планка сопряжения #капельник ",
       arrow: 3,
-      sizes: [],
+      sizes: [
+        {
+          position: {
+            marginLeft: 149,
+            marginTop: 84,
+          },
+          value: 100,
+          id: 1,
+          type: "length",
+        },
+        {
+          position: {
+            marginLeft: 228,
+            marginTop: 186,
+          },
+          value: 60,
+          id: 2,
+          type: "length",
+        },
+        {
+          position: {
+            marginLeft: 160,
+            marginTop: 234,
+          },
+          value: 10,
+          id: 3,
+          type: "length",
+        },
+        {
+          position: {
+            marginLeft: 175,
+            marginTop: 157,
+          },
+          value: 135,
+          id: 4,
+          type: "degree",
+        },
+      ],
       svgPaths: [
         "M57 54L218.513 150.557C218.815 150.738 219 151.064 219 151.416V254.555C219 255.557 217.692 255.936 217.155 255.091L192.871 216.788",
       ],
@@ -823,7 +1007,44 @@ class ProductList {
       name: "Планка сопряжения кровли",
       alias: "#карнизная планка #планка сопряжения #капельник ",
       arrow: 3,
-      sizes: [],
+      sizes: [
+        {
+          position: {
+            marginLeft: 149,
+            marginTop: 84,
+          },
+          value: 100,
+          id: 1,
+          type: "length",
+        },
+        {
+          position: {
+            marginLeft: 228,
+            marginTop: 186,
+          },
+          value: 100,
+          id: 2,
+          type: "length",
+        },
+        {
+          position: {
+            marginLeft: 160,
+            marginTop: 234,
+          },
+          value: 10,
+          id: 3,
+          type: "bend",
+        },
+        {
+          position: {
+            marginLeft: 160,
+            marginTop: 157,
+          },
+          value: 135,
+          id: 4,
+          type: "degree",
+        },
+      ],
       svgPaths: [
         "M51 48L212.513 144.557C212.815 144.738 213 145.064 213 145.416V249.541C213 250.438 211.917 250.869 211.324 250.195C202.784 240.493 204.59 233.56 213 221",
       ],
@@ -834,7 +1055,53 @@ class ProductList {
       name: "Отлив",
       alias: "#отлив #подоконник",
       arrow: 1,
-      sizes: [],
+      sizes: [
+        {
+          position: {
+            marginLeft: 30,
+            marginTop: 234,
+          },
+          value: 20,
+          id: 1,
+          type: "length",
+        },
+        {
+          position: {
+            marginLeft: 1,
+            marginTop: 184,
+          },
+          value: 20,
+          id: 2,
+          type: "length",
+        },
+        {
+          position: {
+            marginLeft: 119,
+            marginTop: 135,
+          },
+          value: 100,
+          id: 3,
+          type: "length",
+        },
+        {
+          position: {
+            marginLeft: 210,
+            marginTop: 116,
+          },
+          value: 100,
+          id: 4,
+          type: "degree",
+        },
+        {
+          position: {
+            marginLeft: 270,
+            marginTop: 104,
+          },
+          value: 20,
+          id: 5,
+          type: "length",
+        },
+      ],
       svgPaths: [
         "M56 222L29.6902 231.396C28.9524 231.66 28.2119 231.011 28.3761 230.245L39.8574 176.666C39.9434 176.264 40.2663 175.956 40.6715 175.889L259.164 139.639C259.646 139.559 260 139.141 260 138.652V92",
       ],
@@ -843,9 +1110,55 @@ class ProductList {
       id: 19,
       type: 1,
       name: "Примыкание",
-      alias: "#примыкание #подоконник",
+      alias: "#примыкание ",
       arrow: 3,
-      sizes: [],
+      sizes: [
+        {
+          position: {
+            marginLeft: 30,
+            marginTop: 47,
+          },
+          value: 20,
+          id: 1,
+          type: "length",
+        },
+        {
+          position: {
+            marginLeft: 80,
+            marginTop: 180,
+          },
+          value: 90,
+          id: 2,
+          type: "degree",
+        },
+        {
+          position: {
+            marginLeft: 30,
+            marginTop: 143,
+          },
+          value: 100,
+          id: 3,
+          type: "length",
+        },
+        {
+          position: {
+            marginLeft: 130,
+            marginTop: 224,
+          },
+          value: 100,
+          id: 4,
+          type: "length",
+        },
+        {
+          position: {
+            marginLeft: 230,
+            marginTop: 228,
+          },
+          value: 10,
+          id: 5,
+          type: "bend",
+        },
+      ],
       svgPaths: [
         "M229.5 217C240.063 228.098 245.669 226.462 253.913 218.69C254.563 218.077 254.122 217 253.23 217H65C64.4477 217 64 216.552 64 216V70.5C64 69.9477 63.5523 69.5 63 69.5H29.5",
       ],
@@ -854,9 +1167,46 @@ class ProductList {
       id: 20,
       type: 1,
       name: "Примыкание",
-      alias: "#примыкание #подоконник",
+      alias: "#примыкание ",
       arrow: 3,
-      sizes: [],
+      sizes: [
+        {
+          position: {
+            marginLeft: 80,
+            marginTop: 180,
+          },
+          value: 90,
+          id: 2,
+          type: "degree",
+        },
+        {
+          position: {
+            marginLeft: 30,
+            marginTop: 143,
+          },
+          value: 100,
+          id: 3,
+          type: "length",
+        },
+        {
+          position: {
+            marginLeft: 130,
+            marginTop: 224,
+          },
+          value: 100,
+          id: 4,
+          type: "length",
+        },
+        {
+          position: {
+            marginLeft: 230,
+            marginTop: 228,
+          },
+          value: 10,
+          id: 5,
+          type: "bend",
+        },
+      ],
       svgPaths: [
         "M229.5 217C240.063 228.098 245.669 226.462 253.913 218.69C254.563 218.077 254.122 217 253.23 217H65C64.4477 217 64 216.552 64 216V69.5",
       ],
@@ -865,9 +1215,55 @@ class ProductList {
       id: 21,
       type: 1,
       name: "Примыкание",
-      alias: "#примыкание #подоконник",
+      alias: "#примыкание ",
       arrow: 3,
-      sizes: [],
+      sizes: [
+        {
+          position: {
+            marginLeft: 80,
+            marginTop: 180,
+          },
+          value: 90,
+          id: 1,
+          type: "degree",
+        },
+        {
+          position: {
+            marginLeft: 30,
+            marginTop: 143,
+          },
+          value: 100,
+          id: 2,
+          type: "length",
+        },
+        {
+          position: {
+            marginLeft: 130,
+            marginTop: 224,
+          },
+          value: 100,
+          id: 3,
+          type: "length",
+        },
+        {
+          position: {
+            marginLeft: 210,
+            marginTop: 240,
+          },
+          value: 10,
+          id: 4,
+          type: "bend",
+        },
+        {
+          position: {
+            marginLeft: 240,
+            marginTop: 209,
+          },
+          value: 20,
+          id: 5,
+          type: "length",
+        },
+      ],
       svgPaths: [
         "M64 69.5V216C64 216.552 64.4477 217 65 217H217.761C217.918 217 218.073 217.037 218.213 217.108L253.69 235.077C254.56 235.518 254.343 236.802 253.374 236.913C239.407 238.509 238.543 234.755 232 224.091",
       ],
