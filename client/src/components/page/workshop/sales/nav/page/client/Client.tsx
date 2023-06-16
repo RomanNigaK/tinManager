@@ -117,7 +117,8 @@ export function NewClient() {
     try {
       body.workshop = user!.workshop;
       body.userId = user!.id;
-      request("/api/client/new", "POST", body, {});
+      await request("/api/client/new", "POST", body, {});
+
       const clients = await request(
         "/api/client/list/",
         "POST",
