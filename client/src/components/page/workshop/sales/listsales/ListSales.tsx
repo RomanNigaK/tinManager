@@ -280,7 +280,6 @@ function DateCurrentSale({ sale }: IPropsDateCurrentSale) {
           // let items:{idItem:number,quantity:number};
           // if (!ids.includes(e.idMaterial)) {
           //   ids.push(e.idMaterial);
-
           // }
 
           return {

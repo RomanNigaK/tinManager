@@ -42,6 +42,7 @@ import BasketItem from "../../../commons/basketitem/BasketItem";
 import AttentionSvg from "../../../commons/svg/AttentionSvg";
 import SelectBlock from "@commons/selectBlock/SelectBlock";
 import LineiconsOptions from "@commons/lineiconsOptions/LineiconsOptions";
+import Preloader from "@commons/preloader/Preloader";
 
 const styleGrid = {
   gridTemplateColumns: "0px auto",
@@ -70,7 +71,7 @@ export default function Material() {
     selectorNotFilterMaterials(state)
   ).length;
   const user = useAppSelector((state) => selectorUser(state));
-  const { request } = useHttp();
+  const { request, loading } = useHttp();
 
   const savestandartListMaterial = async (listMat?: MaterialType[]) => {
     let body: any = {};
@@ -126,7 +127,11 @@ export default function Material() {
             <div>
               <h4>Стандартный список материаллов</h4>
               <div className={scss.btns}>
-                <Btn title="Сохранить все" click={savestandartListMaterial} />
+                <Btn
+                  title="Сохранить все"
+                  click={savestandartListMaterial}
+                  loading={loading}
+                />
                 <Btn
                   title="Очистить"
                   click={() => dispatch(deleteStandartListMaterials())}
@@ -136,12 +141,17 @@ export default function Material() {
             {!!gl.length && (
               <SelectBlock title="GRAND LINE" darkArrow>
                 <LineiconsOptions>
-                  <img
-                    src={load}
-                    alt=""
-                    title="Сохранить"
-                    onClick={() => savestandartListMaterial(gl)}
-                  />
+                  {loading ? (
+                    <Preloader />
+                  ) : (
+                    <img
+                      src={load}
+                      alt=""
+                      title="Сохранить"
+                      onClick={() => savestandartListMaterial(gl)}
+                    />
+                  )}
+
                   <img
                     src={close}
                     alt=""
@@ -158,12 +168,17 @@ export default function Material() {
             {!!mp.length && (
               <SelectBlock title="МЕТАЛЛ ПРОФИЛЬ" darkArrow>
                 <LineiconsOptions>
-                  <img
-                    src={load}
-                    alt=""
-                    title="Сохранить"
-                    onClick={() => savestandartListMaterial(mp)}
-                  />
+                  {loading ? (
+                    <Preloader />
+                  ) : (
+                    <img
+                      src={load}
+                      alt=""
+                      title="Сохранить"
+                      onClick={() => savestandartListMaterial(mp)}
+                    />
+                  )}
+
                   <img
                     src={close}
                     alt=""
@@ -181,12 +196,17 @@ export default function Material() {
             {!!noname.length && (
               <SelectBlock title="Кастомный вариант" darkArrow>
                 <LineiconsOptions>
-                  <img
-                    src={load}
-                    alt=""
-                    title="Сохранить"
-                    onClick={() => savestandartListMaterial(noname)}
-                  />
+                  {loading ? (
+                    <Preloader />
+                  ) : (
+                    <img
+                      src={load}
+                      alt=""
+                      title="Сохранить"
+                      onClick={() => savestandartListMaterial(noname)}
+                    />
+                  )}
+
                   <img
                     src={close}
                     alt=""
