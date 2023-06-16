@@ -13,6 +13,7 @@ interface ISale {
   key?: string;
   s?: number;
   pipe?: string;
+  square: number;
 }
 
 interface IListSale {

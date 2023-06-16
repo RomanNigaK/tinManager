@@ -276,9 +276,17 @@ function DateCurrentSale({ sale }: IPropsDateCurrentSale) {
 
       body2.items = JSON.stringify(
         sale.items.map((e) => {
+          // let ids: number[] = [];
+          // let items:{idItem:number,quantity:number};
+          // if (!ids.includes(e.idMaterial)) {
+          //   ids.push(e.idMaterial);
+
+          // }
+
           return {
             iditem: e.idMaterial,
-            quantity: Math.round(((e.quantity * e.h!) / 1000) * 100) / 100,
+            quantity:
+              e.square || Math.round(((e.quantity * e.h!) / 1000) * 100) / 100,
           };
         })
       );
