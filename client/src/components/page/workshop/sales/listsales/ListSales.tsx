@@ -179,7 +179,7 @@ function ViewProductHistorySale({ data }: IPropsViewProductHistorySale) {
             <u>Н</u> - {data.h}
           </div>
           <div>
-            <u>Цена(1 М.П.)</u> -
+            <u>Цена(1 М.П. со скидкой)</u> -
             {((data.summa! - data.sale!) / data.quantity).toFixed(2)}
             &#8381;
           </div>
@@ -194,7 +194,7 @@ function ViewProductHistorySale({ data }: IPropsViewProductHistorySale) {
             <u>Н</u> - {data.h}
           </div> */}
           <div>
-            <u>Цена(1 за 1 шт.)</u> -
+            <u>Цена(1 за 1 шт. со скидкой)</u> -
             {((data.summa! - data.sale!) / data.quantity).toFixed(2)}
             &#8381;
           </div>

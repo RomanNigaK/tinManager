@@ -162,7 +162,7 @@ export function NewClient() {
           error={errors.sale?.message}
         />
         <Align side="left">
-          <Btn title="Добавить" idForHtml="newclient" />
+          <Btn title="Добавить" idForHtml="newclient" loading={loading} />
         </Align>
         <Submit id="newclient" />
       </form>
