@@ -172,7 +172,7 @@ function ListSale({ sales, product }: IPropsListSale) {
                           }}
                           className={scss.dataitem}
                         >
-                          {h !== 0 && <div>Развертка: {h} см</div>}
+                          {h !== 0 && <div>Развертка: {h} мм</div>}
 
                           <div>
                             Количество: {quantity} {h === 0 ? "шт." : "м.п."}
